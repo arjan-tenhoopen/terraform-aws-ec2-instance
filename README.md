@@ -9,7 +9,7 @@ Terraform module which creates an EC2 instance on AWS.
 ```hcl
 module "ec2_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
-  version = "~> 3.0"
+  version = "~> 1.0.0"
 
   name = "single-instance"
 
@@ -32,7 +32,7 @@ module "ec2_instance" {
 ```hcl
 module "ec2_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
-  version = "~> 3.0"
+  version = "~> 1.0.0"
 
   for_each = toset(["one", "two", "three"])
 
@@ -57,7 +57,7 @@ module "ec2_instance" {
 ```hcl
 module "ec2_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
-  version = "~> 3.0"
+  version = "~> 1.0.0"
 
   name = "spot-instance"
 
